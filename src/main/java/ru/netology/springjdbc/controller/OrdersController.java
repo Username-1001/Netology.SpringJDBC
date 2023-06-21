@@ -3,15 +3,15 @@ package ru.netology.springjdbc.controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import ru.netology.springjdbc.repository.ordersRepository;
+import ru.netology.springjdbc.repository.OrdersRepository;
 
 import java.util.List;
 
 @RestController
-public class ordersController {
-    private final ordersRepository repository;
+public class OrdersController {
+    private final OrdersRepository repository;
 
-    public ordersController(ordersRepository repository) {
+    public OrdersController(OrdersRepository repository) {
         this.repository = repository;
     }
 

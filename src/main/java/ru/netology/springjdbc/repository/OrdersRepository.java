@@ -13,11 +13,11 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Repository
-public class ordersRepository {
+public class OrdersRepository {
     private final NamedParameterJdbcTemplate template;
     private final String requestScript;
 
-    public ordersRepository(NamedParameterJdbcTemplate template) {
+    public OrdersRepository(NamedParameterJdbcTemplate template) {
         this.template = template;
         requestScript = read("select_products_by_customer_name.sql");
     }
