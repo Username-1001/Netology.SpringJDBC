@@ -17,6 +17,6 @@ public class OrdersController {
 
     @GetMapping("/products/fetch-product")
     public List<String> fetchProduct(@RequestParam("name") String name) {
-        return repository.getProductName(name);
+        return repository.getProductNameByUser(name);
     }
 }
